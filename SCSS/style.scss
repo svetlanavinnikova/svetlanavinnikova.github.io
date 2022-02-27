@@ -14,7 +14,6 @@
 }
 .burger {
     padding-left: 78px;
-    padding-top: 8px;
     background: transparent;
     border: none;
     display: none;
@@ -167,8 +166,8 @@
 }
 .close-menu{
 	position: fixed;
-    right: 3em;
-    top: 3em;
+    right: 50px;
+    top: 50px;
 	margin: 1em;
 	font-size: 24px;
 	color: #fff;
@@ -177,7 +176,7 @@
 .nav{
 	position: absolute;
 	left: 21%;
-	margin-top: 8%;
+	margin-top: 50px;
 }
 .main-menu-item{
 	padding-top: 30px;
