@@ -1,12 +1,26 @@
 @import 'nullStyle';
 
 .container {
-    width: 1380px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
 }
+.hidden {
+    display: none;
+}
+.header__logo {
+    justify-self: flex-start;
+}
+.burger {
+    padding-left: 78px;
+    padding-top: 8px;
+    background: transparent;
+    border: none;
+    display: none;
+}
 .header {
+    width: 100%;
     padding-top: 80px;
     display: flex;
     align-items: flex-start;
@@ -137,4 +151,105 @@
     justify-content: center;
     padding-top: 100px;
     padding-bottom: 50px;
+}
+.menu-btn{
+	font-size: 36px;
+}
+.menu{
+    font-family: 'Raleway', sans-serif;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #121212;
+    opacity: 0;
+    overflow: hidden;
+}
+.close-menu{
+	position: fixed;
+    right: 3em;
+    top: 3em;
+	margin: 1em;
+	font-size: 24px;
+	color: #fff;
+	z-index: 1;
+}
+.nav{
+	position: absolute;
+	left: 21%;
+	margin-top: 8%;
+}
+.main-menu-item{
+	padding-top: 30px;
+}
+.main-menu-item a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: lighter;
+}
+a ion-icon{
+	position: relative;
+	font-size: 9px;
+	opacity: 0.4;
+}
+
+@media (max-width:1400px) {
+    .container {
+        width: 100vw;
+    }
+}
+@media (max-width:900px) {
+    .works__text {
+        width: 90%;
+    }
+    .header__btn, .main__links {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+@media (max-width:700px) {
+    .main__title {
+        font-size: 64px;
+        line-height: 85px;
+    }
+    .works {
+        justify-content: center;
+    }
+    .work {
+        width: 80vw;
+    }
+    .works__text {
+        width: 98%;
+    }
+    .portret-block {
+        justify-content: center;
+    }
+    .portret-block__portret--1, .portret-block__portret--3 {
+        display: none;
+    }
+    .portret-block__portret--2 {
+        width: 80vw;
+    }
+}
+@media (max-width:600px) {
+    .contacts {
+        display: none;
+    }
+}
+@media (max-width:500px) {
+    .main {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .main__title {
+        font-size: 48px;
+    }
+    .main__text {
+        margin-top: 30px;
+    }
+    .latest-works {
+        padding-top: 70px;
+    }
 }
