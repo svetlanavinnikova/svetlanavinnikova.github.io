@@ -227,6 +227,7 @@ a ion-icon{
 }
 .portfolio__img--cat {
     height: 450px;
+    border-right: 1px solid #000;
 }
 .portfolio__img--artlife {
     height: 450px;
@@ -257,6 +258,23 @@ a ion-icon{
     line-height: 34px;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+.three-row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.three-row__img {
+    width: 30%;
+}
+.one__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.one-row__img {
+    width: 80%;
 }
 @media (max-width:1400px) {
     .container {
@@ -327,6 +345,13 @@ a ion-icon{
     }
     .portfolio__img--anaskuz, .portfolio__img--posts {
         width: 70vw;
+    }
+    .three-row {
+        flex-direction: column;
+    }
+    .three-row__img {
+        width: 80vw;
+        margin-bottom: 30px;
     }
 }
 @media (max-width:600px) {
@@ -403,5 +428,5 @@ a ion-icon{
     }
     .footer {
         padding-top: 50px;
-        }
+    }
 }
