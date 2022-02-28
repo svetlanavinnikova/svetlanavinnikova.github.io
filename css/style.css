@@ -683,5 +683,17 @@ a ion-icon {
   .footer {
     padding-top: 50px;
   }
+  .portfolio__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .portfolio__item {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

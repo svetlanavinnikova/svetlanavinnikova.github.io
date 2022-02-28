@@ -429,4 +429,11 @@ a ion-icon{
     .footer {
         padding-top: 50px;
     }
+    .portfolio__list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .portfolio__item {
+        margin-bottom: 10px;
+    }
 }
