@@ -58,12 +58,16 @@ button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
+a {
+    transition: all 0.5s ease;
+}
 a,
 a:visited {
     text-decoration: none;
 }
 a:hover {
     text-decoration: none;
+    opacity: 0.4;
 }
 ul li {
     list-style: none;

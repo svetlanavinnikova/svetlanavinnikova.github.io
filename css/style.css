@@ -67,6 +67,11 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -74,6 +79,7 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  opacity: 0.4;
 }
 
 ul li {
@@ -111,7 +117,6 @@ h6 {
 
 .burger {
   padding-left: 78px;
-  padding-top: 8px;
   background: transparent;
   border: none;
   display: none;
@@ -145,6 +150,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.link-btn:hover {
+  opacity: 0.7;
 }
 
 .link__text {
@@ -292,6 +301,8 @@ h6 {
 
 .work__link {
   margin-top: 35px;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
 }
 
 .work__img {
@@ -339,8 +350,8 @@ h6 {
 
 .close-menu {
   position: fixed;
-  right: 3em;
-  top: 3em;
+  right: 50px;
+  top: 50px;
   margin: 1em;
   font-size: 24px;
   color: #fff;
@@ -350,7 +361,7 @@ h6 {
 .nav {
   position: absolute;
   left: 21%;
-  margin-top: 8%;
+  margin-top: 50px;
 }
 
 .main-menu-item {
@@ -369,9 +380,124 @@ a ion-icon {
   opacity: 0.4;
 }
 
+.portfolio__list {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__item-link {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #A18974;
+}
+
+.portfolio__title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.row--top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.portfolio__img--cat {
+  height: 450px;
+}
+
+.portfolio__img--artlife {
+  height: 450px;
+}
+
+.portfolio__img--popart, .portfolio__img--edu, .portfolio__img--poster, .portfolio__img--sport {
+  width: 650px;
+}
+
+.portfolio__img--anaskuz, .portfolio__img--posts {
+  width: 650px;
+}
+
+.portfolio__img--svdesign {
+  width: 860px;
+}
+
+.poftfolio__site-making {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site__column:not(:last-child) {
+  margin-right: 60px;
+}
+
+.portfolio__site-link {
+  display: block;
+  color: #A18974;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1400px) {
   .container {
     width: 100vw;
+  }
+  .portfolio__img--cat {
+    width: 19vw;
+    height: auto;
+  }
+  .portfolio__img--artlife {
+    width: 65vw;
+    height: auto;
+  }
+  .portfolio__img--popart, .portfolio__img--edu, .portfolio__img--poster, .portfolio__img--sport {
+    width: 45vw;
+  }
+  .row--column-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .portfolio__img--posts {
+    margin-top: 50px;
   }
 }
 
@@ -385,9 +511,19 @@ a ion-icon {
   .burger {
     display: block;
   }
+  .portfolio__img--svdesign {
+    width: 70vw;
+  }
 }
 
 @media (max-width: 700px) {
+  .header {
+    padding-top: 40px;
+  }
+  .main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .main__title {
     font-size: 64px;
     line-height: 85px;
@@ -414,19 +550,45 @@ a ion-icon {
   .portret-block__portret--2 {
     width: 80vw;
   }
+  .portfolio__img--anaskuz, .portfolio__img--posts {
+    width: 70vw;
+  }
 }
 
 @media (max-width: 600px) {
+  .main__title {
+    font-size: 48px;
+    line-height: 85px;
+  }
+  .main__text {
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 26px;
+  }
   .contacts {
     display: none;
+  }
+  .latest-works {
+    padding-top: 70px;
+  }
+  .latests-works__title {
+    font-size: 24px;
+  }
+  .link__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .works__text {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .portfolio__item-link, .portfolio__site-link {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 500px) {
-  .main {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
   .main__title {
     font-size: 48px;
   }
@@ -435,6 +597,49 @@ a ion-icon {
   }
   .latest-works {
     padding-top: 70px;
+  }
+  .portfolio__title {
+    text-align: center;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio__img--cat {
+    width: 40vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .portfolio__img--artlife {
+    width: 80vw;
+    height: auto;
+  }
+  .portfolio__img--popart, .portfolio__img--edu, .portfolio__img--poster, .portfolio__img--sport {
+    width: 80vw;
+  }
+  .portfolio__img--popart, .portfolio__img--poster {
+    margin-bottom: 20px;
+  }
+  .row--column-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .poftfolio__site-making {
+    margin-bottom: 40px;
+  }
+  .footer {
+    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
