@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Светланы Винниковой</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="./img/logo.svg" alt="VINNIKOVA" class="logo__img">
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="./index.html#portfolio" class="header__menu-link">Портфолио</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="./index.html" class="header__menu-link">Обо мне</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="about">
+        <div class="container about__container">
+            <div class="about-me-block">
+                <h2 class="about__title">Обо мне</h2>
+                <p class="about__text">Привет! Меня зовут Света, я&nbsp;графический дизайнер. В&nbsp;дизайне я&nbsp;уже более 2&nbsp;лет, и&nbsp;за&nbsp;это время я&nbsp;выполнила уже более 50&nbsp;проектов, среди которых редизайн сайта строительной компании &laquo;ГК&nbsp;Проспект&raquo; и&nbsp;разработка дизайна для приложения магазина одежды. Если вы&nbsp;хотите красивый удобный сайт, запоминающуюся визитку, презентацию, которая выделит вас среди других, то&nbsp;вы&nbsp;обратились по&nbsp;адресу!</p>
+            </div>
+            <img src="./img/me-2.JPG" alt="Светлана Винникова" class="me-img">
+            <div class="eye">
+                <div class="eye-block">
+                    <img src="./img/eye.svg" alt="посмотреть" class="eye__icon">
+                    <a href="./index.html#portfolio" class="eye__text">портфолио</a>
+                    <div class="eye__socials">
+                        <a href="https://www.behance.net/973c67c2" class="eye__socials-link">                           <img src="./img/Behance_icon.svg" alt="Behance" class="eye__socials-item">
+                        </a>
+                        <a href="https://t.me/svetlanavinnikova" class="eye__socials-link">
+                            <img src="./img/telegram.svg" alt="Telegram" class="eye__socials-item">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=79507056522" class="eye__socials-link">
+                            <img src="./img/whatsapp.svg" alt="Whatsapp" class="eye__socials-item">
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+        <div class="container portfolio__container">
+            <ul class="portfolio__nav">
+                <li id="card" class="portfolio__nav-item portfolio__nav-item--chosen">Все работы</li>
+                <li id="web" class="portfolio__nav-item">Сайты</li>
+                <li id="poster" class="portfolio__nav-item">Плакаты</li>
+                <li id="social" class="portfolio__nav-item">Соц сети</li>
+                <li id="presentation" class="portfolio__nav-item">Презентации</li>
+                <li id="b-card" class="portfolio__nav-item">Визитки</li>
+                <li id="poly" class="portfolio__nav-item">Полиграфия</li>
+            </ul>
+        </div>
+        <div class="cards">
+            <!-- <a href="https://prospekt-gk.ru" class="web card cards__card">
+                <img class="card__img" src="./img/gk-prospekt.png" alt="">
+                <div class="card-hover">
+                    <p class="card-hover__text">Редизайн сайта строительной компании ГК Проспект</p>
+                </div>
+            </a> -->
+            <a href="./amore-si-presentation.html" class="presentation card cards__card">
+                <img class="card__img" src="./img/amore-si-presentation-img.png" alt="Презентация для свадебного агентства amore si">
+                <div class="card-hover">
+                    <p class="card-hover__text">Презентация для свадебного агентства amore si</p>
+                </div>
+            </a>
+            <a href="./amore-si-b-card.html" class="b-card card cards__card">
+                <img class="card__img" src="./img/amore-si-3b-card.png" alt="Визитка для свадебного агентства amore si">
+                <div class="card-hover">
+                    <p class="card-hover__text">Визитка для свадебного агентства amore si</p>
+                </div>
+            </a>
+            <a href="./amore-si-flyer.html" class="poly card cards__card">
+                <img class="card__img" src="./img/amore-si-flyer.png" alt="Флаер свадебного агентства amore si">
+                <div class="card-hover">
+                    <p class="card-hover__text">Флаер свадебного агентства amore si</p>
+                </div>
+            </a>
+            <a href="./vottak-felicita-presentation.html" class="card presentation cards__card">
+                <img class="card__img" src="./img/felicita-presentation.png" alt="Презентация для event-агентства vottak felicita’">
+                <div class="card-hover">
+                    <p class="card-hover__text">Презентация для event-агентства vottak felicita’</p>
+                </div>
+            </a>
+            <a href="./vottak-felicita-b-card.html" class="b-card card cards__card">
+                <img class="card__img" src="./img/b-card-vottakfelicita.png" alt="Визитка для event-агентства vottak felicita’">
+                <div class="card-hover">
+                    <p class="card-hover__text">Визитка для event-агентства vottak felicita’</p>
+                </div>
+            </a>
+            <a href="https://svetlanavinnikova.github.io/sidakov/" class="web card cards__card">
+                <img class="card__img" src="./img/sidakov-web.png" alt="Концепт редизайна сайта школы драмы Германа Сидакова">
+                <div class="card-hover">
+                    <p class="card-hover__text">Концепт редизайна сайта школы драмы Германа Сидакова</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer__container">
+            <ul class="footer__list">
+                <li class="footer__list-item footer__list-title">Связаться со мной</li>
+                <li class="footer__list-item">
+                    <a class="footer__list-link" href="tel:+79507056522">+7 950 705 65 22</a>
+                </li>
+                <li class="footer__list-item">
+                    <a class="footer__list-link" href="mailto:+svetlana_n.vinnikova@mail.ru">svetlana_n.vinnikova@mail.ru</a>
+                </li>
+                <li class="footer__list-item footer__socials-wrap">
+                    <a href="https://www.behance.net/973c67c2" class="footer__socials-link">                           <img src="./img/Behance_icon.svg" alt="Behance" class="footer__socials-item">
+                    </a>
+                    <a href="https://t.me/svetlanavinnikova" class="footer__socials-link">
+                        <img src="./img/telegram.svg" alt="Telegram" class="footer__socials-item">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=79507056522" class="footer__socials-link">
+                        <img src="./img/whatsapp.svg" alt="Whatsapp" class="footer__socials-item">
+                    </a>                        
+                </li>
+            </ul>
+            <a href="index.html" class="logo footer__logo">
+                <img src="./img/logo.svg" alt="VINNIKOVA" class="logo__img footer__logo-img">
+            </a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./scripts/filter.js"></script>
+</body>
+</html>
+
